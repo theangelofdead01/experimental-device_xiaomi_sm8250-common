@@ -12,7 +12,25 @@
     <version>1.0-2</version>
     <interface>
         <name>ISap</name>
+	<instance>slot1</instance>
         <instance>slot2</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio</name>
+    <version>1.0-6</version>
+    <interface>
+        <name>IRadio</name>
+        <instance>slot1</instance>
+        <instance>slot2</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio.config</name>
+    <version>1.0-3</version>
+    <interface>
+        <name>IRadioConfig</name>
+        <instance>default</instance>
     </interface>
 </hal>
 <hal format="hidl" optional="true">
@@ -21,6 +39,18 @@
     <interface>
         <name>IdpmQmi</name>
         <instance>dpmQmiService</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>com.fingerprints.extension</name>
+    <version>3.0</version>
+    <interface>
+        <name>IFingerprintNavigation</name>
+        <instance>default</instance>
+    </interface>
+    <interface>
+        <name>IFingerprintSensorTest</name>
+        <instance>default</instance>
     </interface>
 </hal>
 <hal format="hidl" optional="true">
@@ -278,7 +308,7 @@
 </hal>
 <hal format="hidl" optional="true">
     <name>vendor.qti.hardware.radio.lpa</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <interface>
         <name>IUimLpa</name>
         <instance>UimLpa0</instance>
@@ -477,7 +507,7 @@
 </hal>
 <hal format="hidl" optional="true">
     <name>android.hardware.wifi.supplicant</name>
-    <version>1.0-4</version>
+    <version>1.2-4</version>
     <interface>
         <name>ISupplicant</name>
         <instance>default</instance>
@@ -485,7 +515,7 @@
 </hal>
 <hal format="hidl" optional="true">
     <name>android.hardware.wifi</name>
-    <version>1.0-5</version>
+    <version>1.3-5</version>
     <interface>
         <name>IWifi</name>
         <instance>default</instance>
